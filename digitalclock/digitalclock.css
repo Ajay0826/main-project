@@ -1,0 +1,79 @@
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*BODY*/
+body {
+  background-color: rgb(21, 32, 43);
+  background-image: url(clock\ background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*HEADER*/
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  margin: 2rem;
+  padding: 2rem;
+  line-height: 30px;
+}
+/*MAIN*/
+main {
+  flex: 1;
+}
+
+.container {
+  background-color: rgba(41, 219, 210, 0.315);
+  border: 2px solid white;
+  border-radius: 30px;
+  box-shadow: 0px 10px 15px 0px rgba(245, 245, 245, 0.562);
+
+  margin: 4px;
+  width: min(300px);
+  height: min(235px);
+
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.display {
+  margin: 0;
+  font-size: 35px;
+  font-weight: lighter;
+}
+.display h1 {
+  font-size: clamp(40px, 4vh, 65px);
+  white-space: nowrap;
+}
+
+.display h3 {
+  font-size: clamp(30px, 3vh, 50px);
+}
+
+/*FOOTER*/
+
+footer {
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.575);
+  position: relative;
+  bottom: 0;
+  margin: 1rem;
+  color: white;
+
+  line-height: 30px;
+}

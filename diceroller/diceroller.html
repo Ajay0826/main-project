@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Roller</title>
+    <link rel="stylesheet" href="diceroller.css" />
+  </head>
+  <body>
+    <div class="dice-container">
+      <h1>🎲 Dice Roller</h1>
+
+      <div class="dice-controls">
+        <div class="control-group">
+          <label for="dice-count">Number of Dice:</label>
+          <input type="number" id="dice-count" min="1" max="20" value="1" />
+        </div>
+
+        <div class="control-group">
+          <label for="dice-sides">Sides:</label>
+          <select id="dice-sides">
+            <option value="4">D4</option>
+            <option value="6" selected>D6</option>
+            <option value="8">D8</option>
+            <option value="10">D10</option>
+            <option value="12">D12</option>
+            <option value="20">D20</option>
+            <option value="100">D100</option>
+          </select>
+        </div>
+      </div>
+
+      <button id="roll-btn" class="btn btn-roll">Roll Dice</button>
+
+      <div class="dice-results">
+        <h2>Results:</h2>
+        <div class="results-display" id="results-display">
+          <p class="no-result">Roll the dice to see results!</p>
+        </div>
+        <div class="results-summary">
+          <p>Total: <span id="total">0</span></p>
+        </div>
+      </div>
+
+      <button id="clear-btn" class="btn btn-clear">Clear</button>
+    </div>
+
+    <script src="diceroller.js"></script>
+  </body>
+</html>

@@ -1,0 +1,196 @@
+/* Simple CV Styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+fieldset {
+  border: none;
+}
+
+/* HEADER */
+header {
+  border-bottom: 2px solid #333;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+
+header hr {
+  display: none;
+}
+
+/* INTRODUCTION SECTION */
+.introdution {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.introdution h1 {
+  font-size: 28px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.introdution h3 {
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+address {
+  font-style: normal;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* SECTIONS */
+section {
+  margin-bottom: 20px;
+}
+
+section h3 {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+}
+
+section h4 {
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+
+section p {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+/* LISTS */
+ul {
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+ul li {
+  font-size: 13px;
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #333;
+  text-align: center;
+}
+
+footer h3 {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+}
+
+footer a {
+  color: #0066cc;
+  text-decoration: none;
+  font-size: 13px;
+  margin: 0 5px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* TOGGLE BUTTON */
+.toggle {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 13px;
+  margin-top: 20px;
+  margin-left: 10rem;
+}
+
+.toggle:hover {
+  background-color: #555;
+}
+
+/* DARK MODE */
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+body.dark-mode .container {
+  background-color: #2d2d2d;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode section h3,
+body.dark-mode footer h3,
+body.dark-mode header {
+  border-bottom-color: #e0e0e0;
+}
+
+body.dark-mode footer a {
+  color: #66b3ff;
+}
+
+/* PRINT STYLING */
+@media print {
+  body {
+    background-color: white;
+    padding: 0;
+  }
+
+  .container {
+    box-shadow: none;
+    max-width: 100%;
+  }
+
+  .toggle {
+    display: none;
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .introdution h1 {
+    font-size: 20px;
+  }
+}

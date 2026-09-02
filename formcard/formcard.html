@@ -1,0 +1,48 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formcard</title>
+    <link rel="stylesheet" href="formcard.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="card">
+        <h2>contact us</h2>
+        <form action="" method="post" class="forms">
+          <label for="name">Name: </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="enter your name "
+          />
+
+          <label for="email">Email: </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="enter your email"
+          />
+
+          <label for="message">Message: </label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="type your message"
+          ></textarea>
+          <button type="submit" class="submit">Submit</button>
+          <button type="reset" class="reset">Reset</button>
+        </form>
+      </section>
+
+      <section class="data-card" id="dataCard">
+        <h2>Submitted Data</h2>
+        <div id="dataContainer"></div>
+      </section>
+    </div>
+
+    <script src="formcard.js"></script>
+  </body>
+</html>

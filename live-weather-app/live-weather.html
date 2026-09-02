@@ -1,0 +1,44 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live-weather</title>
+    <link rel="stylesheet" href="live-weather.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Live-weather</h1>
+      <form action="" id="city-form">
+        <label for="city-name" class="sr-only">City name</label>
+        <input
+          type="text"
+          name="city-name"
+          id="city-name"
+          placeholder="Enter city name"
+        />
+        <button type="submit">Search</button>
+      </form>
+      <p id="error-text">enter City and Wait</p>
+    </header>
+
+    <main id="hidden0" hidden>
+      <div class="container">
+        <div class="image">
+          <div>
+            <h1 id="temp-display">temperatures</h1>
+            <p id="discription">Temperature description</p>
+          </div>
+          <img src="" alt="weather img" id="weather-icon" />
+        </div>
+
+        <h2 id="location-name">location</h2>
+        <div class="h4grid">
+          <h4 id="humidity-val">humidity percentages</h4>
+          <h4 id="wind-val">wind speed</h4>
+        </div>
+      </div>
+    </main>
+    <footer>&copy; Ajay Saharan 2026</footer>
+    <script src="live-weather.js"></script>
+  </body>
+</html>

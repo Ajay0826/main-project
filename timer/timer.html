@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <link rel="stylesheet" href="timer.css" />
+  </head>
+  <body>
+    <div class="timer-container">
+      <h1>Timer</h1>
+      <div class="timer-display">
+        <input
+          type="number"
+          id="hours"
+          min="0"
+          max="23"
+          placeholder="HH"
+          value="0"
+        />
+        <span>:</span>
+        <input
+          type="number"
+          id="minutes"
+          min="0"
+          max="59"
+          placeholder="MM"
+          value="0"
+        />
+        <span>:</span>
+        <input
+          type="number"
+          id="seconds"
+          min="0"
+          max="59"
+          placeholder="SS"
+          value="0"
+        />
+      </div>
+      <div class="timer-controls">
+        <button id="start-btn" class="btn btn-start">Start</button>
+        <button id="pause-btn" class="btn btn-pause" disabled>Pause</button>
+        <button id="reset-btn" class="btn btn-reset">Reset</button>
+      </div>
+    </div>
+    <script src="timer.js"></script>
+  </body>
+</html>
